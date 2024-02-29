@@ -23,6 +23,7 @@ public class LogInPage extends DriverScript {
 	@FindBy(name = "Password") WebElement passwordField;
 	@FindBy(xpath = " //input[@value= 'Log in']") WebElement loginButton;
 	@FindBy(linkText = "Forgot password?") WebElement forgotPasswordLink;
+	@FindBy(xpath = "//input[@class='email input-validation-error']") WebElement invalidemailMsg;
 	
 	
 	//***************************************Page Initialization******************************//
@@ -52,9 +53,10 @@ public class LogInPage extends DriverScript {
     	return driver.getTitle();
     }
     
-    public void testinvalidemailid(String email) 
+    public String invalidemailMsg(String email) 
     {
     	emailTextField.sendKeys(email);
+    	return invalidemailMsg.getText();
     }
 
 }
