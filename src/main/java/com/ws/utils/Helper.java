@@ -12,7 +12,7 @@ import com.ws.base.DriverScript;
 
 public class Helper extends DriverScript {
 	
-	public static void captureScreen(WebDriver driver) 
+	public static String captureScreen(WebDriver driver) 
 	{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String screenPath = System.getProperty("user-dir")+ "./reports/screenshots/screen.png";
@@ -22,6 +22,7 @@ public class Helper extends DriverScript {
 		  catch (IOException e) {
 			e.printStackTrace();
 		}
+		return screenPath;
 			
 	}
 
