@@ -5,7 +5,9 @@
     <classes>
       <class name="com.ws.tests.LogInPageTest">
         <methods>
+          <include name="setup"/>
           <include name="testLoginFucntion"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.ws.tests.LogInPageTest -->
     </classes>

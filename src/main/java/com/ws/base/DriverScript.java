@@ -49,7 +49,7 @@ public class DriverScript {
 		
 			else if(browser.trim().equalsIgnoreCase("firefox"))
 		{
-			System.out.println("Browser inuse"+browser);
+			System.out.println("Browser inuse" +browser);
 			driver = new FirefoxDriver();
 		}
 			else if(browser.trim().equalsIgnoreCase("edge"))
