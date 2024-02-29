@@ -81,6 +81,7 @@ public class DriverScript {
 	 */
 	public static void quitDriver() {
 		driver.quit();
+		
 	}
 	
 
