@@ -51,5 +51,10 @@ public class LogInPage extends DriverScript {
     public String getLoginPageTitle() {
     	return driver.getTitle();
     }
+    
+    public void testinvalidemailid(String email) 
+    {
+    	emailTextField.sendKeys(email);
+    }
 
 }
