@@ -17,6 +17,7 @@ public class LogInPageTest extends BaseTest{
 	public void testHomePageTitle() 
 	{
 		String title = homepage.getHomePageTitle();
+		System.out.println(title);
 		Assert.assertTrue(title.contains("Demo Web Shop"));
 		
 	}
