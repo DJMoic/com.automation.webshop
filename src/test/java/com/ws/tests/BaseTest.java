@@ -1,5 +1,6 @@
 package com.ws.tests;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.ws.base.DriverScript;
@@ -19,6 +20,7 @@ public class BaseTest extends DriverScript {
 		loginpage = new LogInPage();
 	}
 	
+	@AfterMethod
 	public void teardown() 
 	{
 		driver.quit();
