@@ -9,23 +9,9 @@ import com.ws.pages.LogInPage;
 
 
 
-public class LogInPageTest extends DriverScript{
-	
-	HomePage homepage;
-	LogInPage loginpage;
+public class LogInPageTest extends BaseTest{
 	
 	
-	public void setup()
-	{
-		initApplication();
-		homepage = new HomePage();
-		loginpage = new LogInPage();
-	}
-	
-	public void teardown() 
-	{
-		driver.quit();
-	}
 	
 	@Test
 	public void testHomePageTitle() 
