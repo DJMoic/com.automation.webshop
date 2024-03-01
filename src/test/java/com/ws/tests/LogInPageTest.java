@@ -68,7 +68,7 @@ public class LogInPageTest extends BaseTest{
 		logger.pass("Clicked Login");
 		loginpage.enterEmail("se");
 		logger.pass("Entered invalid email");
-		Assert.assertTrue(true, "Please enter invalid address");
+		Assert.assertTrue(true, "Please enter valid address");
 		driver.quit();
 		 
 		

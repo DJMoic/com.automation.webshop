@@ -1,45 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T12:30:36 EST" name="Default suite" finished-at="2024-02-29T12:32:58 EST" duration-ms="142014">
+  <suite started-at="2024-02-29T18:59:04 EST" name="Default suite" finished-at="2024-02-29T19:07:39 EST" duration-ms="514744">
     <groups>
     </groups>
-    <test started-at="2024-02-29T12:30:36 EST" name="Default test" finished-at="2024-02-29T12:32:58 EST" duration-ms="142014">
+    <test started-at="2024-02-29T18:59:04 EST" name="Default test" finished-at="2024-02-29T19:07:39 EST" duration-ms="514744">
       <class name="com.ws.tests.LogInPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:30:36 EST" name="setup" finished-at="2024-02-29T12:31:01 EST" duration-ms="24491" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T18:59:03 EST" name="setUpReport" finished-at="2024-02-29T18:59:04 EST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T18:59:04 EST" name="setup" finished-at="2024-02-29T19:00:00 EST" duration-ms="56511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testForgotPasswordLink()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:31:01 EST" name="testForgotPasswordLink" finished-at="2024-02-29T12:31:13 EST" duration-ms="12760" status="PASS">
+        <test-method signature="testForgotPasswordLink()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:00:00 EST" name="testForgotPasswordLink" finished-at="2024-02-29T19:00:46 EST" duration-ms="45745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testForgotPasswordLink -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:31:13 EST" name="teardown" finished-at="2024-02-29T12:31:14 EST" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:00:46 EST" name="teardown" finished-at="2024-02-29T19:00:47 EST" duration-ms="555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testForgotPasswordLink status=SUCCESS method=LogInPageTest.testForgotPasswordLink()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:31:14 EST" name="setup" finished-at="2024-02-29T12:31:36 EST" duration-ms="21900" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:00:47 EST" name="setup" finished-at="2024-02-29T19:02:07 EST" duration-ms="80437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testHomePageTitle()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:31:36 EST" name="testHomePageTitle" finished-at="2024-02-29T12:31:36 EST" duration-ms="77" status="PASS">
+        <test-method signature="testHomePageTitle()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:02:07 EST" name="testHomePageTitle" finished-at="2024-02-29T19:02:07 EST" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:31:36 EST" name="teardown" finished-at="2024-02-29T12:31:36 EST" duration-ms="380" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:02:07 EST" name="teardown" finished-at="2024-02-29T19:02:08 EST" duration-ms="609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testHomePageTitle status=SUCCESS method=LogInPageTest.testHomePageTitle()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:31:36 EST" name="setup" finished-at="2024-02-29T12:31:51 EST" duration-ms="15398" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:02:08 EST" name="setup" finished-at="2024-02-29T19:03:12 EST" duration-ms="64131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLoginFucntion()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:31:51 EST" name="testLoginFucntion" finished-at="2024-02-29T12:32:58 EST" duration-ms="66089" status="PASS">
+        <test-method signature="testLoginFucntion()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:03:12 EST" name="testLoginFucntion" finished-at="2024-02-29T19:05:27 EST" duration-ms="134870" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 80.000
+  (Session info: chrome=122.0.6261.95)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a91c5de0dd776680c0956c4d7d9f032d, clickElement {id=f.34FE9A3B2CA78E87689985A0CF228EB8.d.A8066AF5A2E8C19152D230C413F37D6F.e.43}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\DURJOY\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62474}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62474/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a91c5de0dd776680c0956c4d7d9f032d)] -> xpath:  //input[@value= 'Log in']]
+Session ID: a91c5de0dd776680c0956c4d7d9f032d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 80.000
+  (Session info: chrome=122.0.6261.95)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a91c5de0dd776680c0956c4d7d9f032d, clickElement {id=f.34FE9A3B2CA78E87689985A0CF228EB8.d.A8066AF5A2E8C19152D230C413F37D6F.e.43}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\DURJOY\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62474}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62474/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a91c5de0dd776680c0956c4d7d9f032d)] -> xpath:  //input[@value= 'Log in']]
+Session ID: a91c5de0dd776680c0956c4d7d9f032d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at com.ws.pages.LogInPage.clickLoginButton(LogInPage.java:43)
+at com.ws.tests.LogInPageTest.testLoginFucntion(LogInPageTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginFucntion -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ws.tests.LogInPageTest@7ef82753]" started-at="2024-02-29T12:32:58 EST" name="teardown" finished-at="2024-02-29T12:32:58 EST" duration-ms="415" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:05:27 EST" name="teardown" finished-at="2024-02-29T19:05:28 EST" duration-ms="921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginFucntion status=FAILURE method=LogInPageTest.testLoginFucntion()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:05:28 EST" name="setup" finished-at="2024-02-29T19:06:30 EST" duration-ms="61710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testinvalidemailid()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:06:30 EST" name="testinvalidemailid" finished-at="2024-02-29T19:07:38 EST" duration-ms="68869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidemailid -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T19:07:38 EST" name="teardown" finished-at="2024-02-29T19:07:39 EST" duration-ms="115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testinvalidemailid status=SUCCESS method=LogInPageTest.testinvalidemailid()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

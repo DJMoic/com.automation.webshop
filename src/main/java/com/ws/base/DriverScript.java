@@ -63,7 +63,7 @@ public class DriverScript {
 			}
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(80));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		getUrl();
 		
