@@ -6,6 +6,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 import org.testng.xml.SuiteGenerator;
 
 import com.aventstack.extentreports.ExtentReporter;
@@ -16,6 +17,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.ws.base.DriverScript;
 import com.ws.pages.HomePage;
 import com.ws.pages.LogInPage;
+import com.ws.utils.ExcelUtils;
 import com.ws.utils.Helper;
 
 public class BaseTest extends DriverScript {
@@ -60,6 +62,25 @@ public class BaseTest extends DriverScript {
 		
 		report.flush();
 		driver.quit();
+		
+	}
+	
+	@DataProvider(name = "wsdata")
+	public Object[][] testdata() {
+		ExcelUtils xl = new ExcelUtils("./src/test/resources/testdata/wsdatatest.xlsx");
+		int rows = xl.getRowCount(0);
+		Object[][] data = new Object[rows][3];
+		
+		for(int i = 0; i<rows; i++) {
+			data[i][0] = xl.getcellData(0, i, 0);
+			data[i][1] = xl.getcellData(0, i, 1);
+			data[i][2] = xl.getcellData(0, i, 2);
+		}
+		return data;
+			
+			
+	
+			
 		
 	}
 	
