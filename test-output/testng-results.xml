@@ -1,71 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T23:14:51 EST" name="Default suite" finished-at="2024-02-29T23:14:59 EST" duration-ms="7805">
+  <suite started-at="2024-03-01T00:11:36 EST" name="Default suite" finished-at="2024-03-01T00:11:45 EST" duration-ms="8986">
     <groups>
     </groups>
-    <test started-at="2024-02-29T23:14:51 EST" name="Default test" finished-at="2024-02-29T23:14:59 EST" duration-ms="7805">
+    <test started-at="2024-03-01T00:11:36 EST" name="Default test" finished-at="2024-03-01T00:11:45 EST" duration-ms="8986">
       <class name="com.ws.tests.LogInPageTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T23:14:51 EST" name="setUpReport" finished-at="2024-02-29T23:14:51 EST" duration-ms="370" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.LogInPageTest@710c2b53]" started-at="2024-03-01T00:11:35 EST" name="setUpReport" finished-at="2024-03-01T00:11:36 EST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T23:14:51 EST" name="setup" finished-at="2024-02-29T23:14:57 EST" duration-ms="5802" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.LogInPageTest@710c2b53]" started-at="2024-03-01T00:11:36 EST" name="setup" finished-at="2024-03-01T00:11:42 EST" duration-ms="6522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testHomePageTitle()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T23:14:57 EST" name="testHomePageTitle" finished-at="2024-02-29T23:14:57 EST" duration-ms="75" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.ws.tests.LogInPageTest.testHomePageTitle(LogInPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testinvalidemailid()[pri:0, instance:com.ws.tests.LogInPageTest@710c2b53]" started-at="2024-03-01T00:11:42 EST" name="testinvalidemailid" finished-at="2024-03-01T00:11:43 EST" duration-ms="1225" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.LogInPageTest@5386659f]" started-at="2024-02-29T23:14:57 EST" name="teardown" finished-at="2024-02-29T23:14:59 EST" duration-ms="1832" status="PASS">
+        </test-method> <!-- testinvalidemailid -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.LogInPageTest@710c2b53]" started-at="2024-03-01T00:11:43 EST" name="teardown" finished-at="2024-03-01T00:11:45 EST" duration-ms="1161" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testHomePageTitle status=FAILURE method=LogInPageTest.testHomePageTitle()[pri:0, instance:com.ws.tests.LogInPageTest@5386659f] output={null}]]]>
+                <![CDATA[[TestResult name=testinvalidemailid status=SUCCESS method=LogInPageTest.testinvalidemailid()[pri:0, instance:com.ws.tests.LogInPageTest@710c2b53] output={null}]]]>
               </value>
             </param>
           </params>

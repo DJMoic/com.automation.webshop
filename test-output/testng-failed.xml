@@ -7,7 +7,7 @@
         <methods>
           <include name="setUpReport"/>
           <include name="setup"/>
-          <include name="testHomePageTitle"/>
+          <include name="testinvalidemailid"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.ws.tests.LogInPageTest -->

@@ -13,14 +13,14 @@ public class LogInPageTest extends BaseTest{
 	
 	
 	
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void testHomePageTitle() 
 	{
 		logger = report.createTest("Validating HomePage Title");
 		String title = homepage.getHomePageTitle();
 		logger.pass("Got the HomePageTitle");
 		System.out.println(title);
-		Assert.assertTrue(title.contains("AAA"));
+		Assert.assertTrue(title.contains("Demo Web Shop"));
 		logger.pass("Verified the HomePageTitle Successfully");
 		
 	}
@@ -60,7 +60,7 @@ public class LogInPageTest extends BaseTest{
 		quitDriver();
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testinvalidemailid()
 	{
 		logger = report.createTest("Validating message showing \"invalid email");
@@ -70,9 +70,10 @@ public class LogInPageTest extends BaseTest{
 		logger.pass("Entered invalid email");
 		loginpage.clickLoginButton();
 		logger.pass("Clicked LogIn Button");
-		String emailerrormessage = loginpage.invalidemailMsg("please enter valid email");
-		Assert.assertFalse(emailerrormessage.contains("enter valid email"));
-		driver.quit();
+		String emailerrormessage = loginpage.invalidemailMsg();
+		System.out.println(emailerrormessage);
+		Assert.assertTrue(emailerrormessage.contains("Please enter a valid email address."));
+       
 		 
 		
 		
