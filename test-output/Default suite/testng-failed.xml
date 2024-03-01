@@ -8,6 +8,7 @@
           <include name="setUpReport"/>
           <include name="setup"/>
           <include name="testLoginFucntion"/>
+          <include name="testForgotPasswordLink"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.ws.tests.LogInPageTest -->
