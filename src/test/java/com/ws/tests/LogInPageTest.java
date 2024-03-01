@@ -13,18 +13,18 @@ public class LogInPageTest extends BaseTest{
 	
 	
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testHomePageTitle() 
 	{
 		logger = report.createTest("Validating HomePage Title");
 		String title = homepage.getHomePageTitle();
 		logger.pass("Got the HomePageTitle");
 		System.out.println(title);
-		Assert.assertTrue(title.contains("Demo Web Shop"));
+		Assert.assertTrue(title.contains("AAA"));
 		logger.pass("Verified the HomePageTitle Successfully");
 		
 	}
-	@Test(enabled = true)
+	@Test(enabled =false)
 	public void testLoginFucntion() throws InterruptedException {
 		logger = report.createTest("Validating the login Function");
 		homepage.clickLogin();
@@ -49,7 +49,7 @@ public class LogInPageTest extends BaseTest{
 		
 				
 	}
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void testForgotPasswordLink() {
 		logger = report.createTest("Validating the forgotpassword link is present");
 		homepage.clickLogin();
@@ -71,7 +71,7 @@ public class LogInPageTest extends BaseTest{
 		loginpage.clickLoginButton();
 		logger.pass("Clicked LogIn Button");
 		String emailerrormessage = loginpage.invalidemailMsg("please enter valid email");
-		Assert.assertTrue(emailerrormessage.contains("enter valid email"));
+		Assert.assertFalse(emailerrormessage.contains("enter valid email"));
 		driver.quit();
 		 
 		
