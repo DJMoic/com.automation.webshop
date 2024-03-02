@@ -24,8 +24,8 @@ public class LogInPageTest extends BaseTest{
 		logger.pass("Verified the HomePageTitle Successfully");
 		
 	}
-	@Test(enabled =false)
-	public void testLoginFucntion() throws InterruptedException {
+	@Test(dataProvider = "wsdata", enabled = true)
+	public void testLoginFucntion(String username, String password) throws InterruptedException {
 		logger = report.createTest("Validating the login Function");
 		homepage.clickLogin();
 		logger.pass("Verified login");
@@ -34,9 +34,9 @@ public class LogInPageTest extends BaseTest{
 	    Assert.assertTrue(loginpagetitle.contains("Login"));
 	    logger.pass("Verified the loginpagetitle");
 	    
-	    loginpage.enterEmail("seleautouser01@test.com");
+	    loginpage.enterEmail(username);
 	    logger.pass("Entered email");
-		loginpage.enterPassword("Pass@123");
+		loginpage.enterPassword(password);
 		logger.pass("entered password");
 		Thread.sleep(3000);
 		loginpage.clickLoginButton();
@@ -60,7 +60,7 @@ public class LogInPageTest extends BaseTest{
 		quitDriver();
 	}
 	
-	@Test(enabled = true)
+	@Test(enabled =false)
 	public void testinvalidemailid()
 	{
 		logger = report.createTest("Validating message showing \"invalid email");

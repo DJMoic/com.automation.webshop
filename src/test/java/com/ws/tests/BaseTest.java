@@ -69,12 +69,12 @@ public class BaseTest extends DriverScript {
 	public Object[][] testdata() {
 		ExcelUtils xl = new ExcelUtils("./src/test/resources/testdata/wsdatatest.xlsx");
 		int rows = xl.getRowCount(0);
-		Object[][] data = new Object[rows][3];
+		Object[][] data = new Object[rows][2];
 		
 		for(int i = 0; i<rows; i++) {
-			data[i][0] = xl.getcellData(0, i, 0);
-			data[i][1] = xl.getcellData(0, i, 1);
-			data[i][2] = xl.getcellData(0, i, 2);
+			data[i][0] = xl.getCellData(0, i, 0);
+			data[i][1] = xl.getCellData(0, i, 1);
+			
 		}
 		return data;
 			

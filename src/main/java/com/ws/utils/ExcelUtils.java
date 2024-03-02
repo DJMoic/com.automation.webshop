@@ -29,7 +29,7 @@ public class ExcelUtils {
 		return count;
 		}
 		
-		public String getcellData(int sheetNo,int row, int cell ) {
+		public String getCellData(int sheetNo, int row, int cell ) {
 			String data = wb.getSheetAt(sheetNo).getRow(row).getCell(cell).toString();
 			return data;
 		
