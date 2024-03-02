@@ -12,7 +12,7 @@ public class RegisterPage extends DriverScript {
 	
 	//*********************************************page elements*****************************************
 	
-	@FindBy(name = "Gender") WebElement genderbutton;
+	@FindBy(xpath = "//input[@value='M']") WebElement genderbutton;
 	@FindBy(id = "FirstName") WebElement firstname;
 	@FindBy(id = "LastName") WebElement lastname;
 	@FindBy(id = "Email") WebElement emailfield;

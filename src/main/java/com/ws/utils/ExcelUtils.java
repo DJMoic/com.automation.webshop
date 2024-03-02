@@ -20,21 +20,24 @@ public class ExcelUtils {
 		     wb = new XSSFWorkbook(fis);
 		} 
 		    catch (IOException e) {
+			System.out.println("unable to read excel sheet");
 			e.printStackTrace();
 		}
 	}
 		
-		public int getRowCount(int sheetNo) {
+	public int getRowCount(int sheetNo) {
 		int count = wb.getSheetAt(sheetNo).getLastRowNum()+1;
 		return count;
-		}
-		
-		public String getCellData(int sheetNo, int row, int cell ) {
-			String data = wb.getSheetAt(sheetNo).getRow(row).getCell(cell).toString();
-			return data;
+	}
+	
+	
+	public String getCellData(int sheetNo,int row,int cell) {
+		String data = wb.getSheetAt(sheetNo).getRow(row).getCell(cell).toString();
+		return data;
+	}
 		
 			
 		
 	}
 
-}
+

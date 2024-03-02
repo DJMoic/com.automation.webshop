@@ -70,9 +70,9 @@ public class BaseTest extends DriverScript {
 		
 	}
 	
-	@DataProvider(name = "wsdata")
+	@DataProvider(name = "wsexceldata")
 	public Object[][] testdata() {
-		ExcelUtils xl = new ExcelUtils("./src/test/resources/testdata/wsdatatest.xlsx");
+		ExcelUtils xl = new ExcelUtils("./src/test/resources/testdata/wsexceldata.xlsx");
 		int rows = xl.getRowCount(0);
 		Object[][] data = new Object[rows][6];
 		

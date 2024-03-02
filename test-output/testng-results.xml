@@ -2,16 +2,16 @@
 <testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-02T08:22:02 EST" name="Default suite" finished-at="2024-03-02T08:22:03 EST" duration-ms="1352">
+  <suite started-at="2024-03-02T15:50:34 EST" name="Default suite" finished-at="2024-03-02T15:50:35 EST" duration-ms="1141">
     <groups>
     </groups>
-    <test started-at="2024-03-02T08:22:02 EST" name="Default test" finished-at="2024-03-02T08:22:03 EST" duration-ms="1352">
+    <test started-at="2024-03-02T15:50:34 EST" name="Default test" finished-at="2024-03-02T15:50:35 EST" duration-ms="1141">
       <class name="com.ws.tests.RegisterTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.RegisterTest@5ddeb7cb]" started-at="2024-03-02T08:22:02 EST" name="setUpReport" finished-at="2024-03-02T08:22:02 EST" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.RegisterTest@5ddeb7cb]" started-at="2024-03-02T15:50:34 EST" name="setUpReport" finished-at="2024-03-02T15:50:34 EST" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method signature="testregisterpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ws.tests.RegisterTest@5ddeb7cb]" started-at="2024-03-02T08:22:03 EST" name="testregisterpage" data-provider="wsdata" finished-at="2024-03-02T08:22:03 EST" duration-ms="0" status="FAIL">
+        <test-method signature="testregisterpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ws.tests.RegisterTest@5ddeb7cb]" started-at="2024-03-02T15:50:35 EST" name="testregisterpage" data-provider="wsdata" finished-at="2024-03-02T15:50:35 EST" duration-ms="0" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.toString()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null]]>
@@ -45,7 +45,7 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.toString()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null
-at com.ws.utils.ExcelUtils.getCellData(ExcelUtils.java:33)
+at com.ws.utils.ExcelUtils.getCellData(ExcelUtils.java:35)
 at com.ws.tests.BaseTest.testdata(BaseTest.java:82)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)

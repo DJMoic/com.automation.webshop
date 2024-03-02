@@ -17,7 +17,7 @@ public class RegisterTest extends BaseTest {
 		logger.pass("Verified the HomePageTitle Successfully");
 		
 	}
-    @Test(dataProvider = "wsdata")
+    @Test(dataProvider = "wsexceldata")
     public void testregisterpage(String gender, String  Name, String LastName, String email, String password, String confrmpasswrd ) {
     	logger = report.createTest("Validating Register Page");
     	homepage.clickregisterlink();
