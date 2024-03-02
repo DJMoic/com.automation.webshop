@@ -65,15 +65,17 @@ public class BaseTest extends DriverScript {
 		
 	}
 	
-	@DataProvider(name = "wsdata")
+	@DataProvider(name = "registerdata")
 	public Object[][] testdata() {
-		ExcelUtils xl = new ExcelUtils("./src/test/resources/testdata/wsdatatest.xlsx");
+		ExcelUtils xl = new ExcelUtils("./src/test/resources/testdata/RegisterData.xlsx");
 		int rows = xl.getRowCount(0);
-		Object[][] data = new Object[rows][2];
+		Object[][] data = new Object[rows][6];
 		
-		for(int i = 0; i<rows; i++) {
-			data[i][0] = xl.getCellData(0, i, 0);
-			data[i][1] = xl.getCellData(0, i, 1);
+		for(int i = 0; i<rows; i++)
+		{
+			for(int j =0; j<6; j++) {
+				data[i][j] = xl.getCellData(0, i, j);
+			}
 			
 		}
 		return data;
