@@ -11,9 +11,8 @@ public class RegisterPage extends DriverScript {
 	
 	
 	//*********************************************page elements*****************************************
-	@FindBy(xpath = "//a[@href='/register']")WebElement registerlink;
-	@FindBy(id = "gender-male") WebElement genderbutton;
-	@FindBy(id = "gender-female") WebElement femalegenderbutton;
+	
+	@FindBy(name = "Gender") WebElement genderbutton;
 	@FindBy(id = "FirstName") WebElement firstname;
 	@FindBy(id = "LastName") WebElement lastname;
 	@FindBy(id = "Email") WebElement emailfield;
@@ -26,20 +25,15 @@ public class RegisterPage extends DriverScript {
 	
 	//********************************************page initialization*************************************
 	
-	public void RegisterPage() {
+	public RegisterPage() {
 		PageFactory.initElements(driver, this);
 	}
 	//********************************************page actions*********************************************
-	public void registerlink() {
-		registerlink.click();
-	}
 	
 	public void genderbutton(String gender) {
 		genderbutton.sendKeys(gender);
 	}
-	public void femalegenderbutton(String gender) {
-		femalegenderbutton.sendKeys(gender);
-	}
+	
 	public void firstname(String Name) {
 		firstname.sendKeys(Name);
 	}
@@ -56,7 +50,7 @@ public class RegisterPage extends DriverScript {
 		confrmpsswrdfield.sendKeys(confrmpasswrd);
 	}
 	
-	public void registerbutton() {
+	public void clickregisterbutton() {
 		registerbutton.click();
 	}
 		

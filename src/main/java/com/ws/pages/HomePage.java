@@ -18,6 +18,7 @@ public class HomePage extends DriverScript {
 	//***************************************Page Elements*************************************//
 	@FindBy(linkText ="Log in") WebElement loginLink;
 	@FindBy(linkText ="Log out" ) WebElement logoutLink;
+	@FindBy(xpath = "//a[@href='/register']")WebElement registerlink;
 	
 	//***************************************Page Initialization******************************//
 	
@@ -38,5 +39,9 @@ public class HomePage extends DriverScript {
 	public void clickLogout() {
 		logoutLink.click();
 	}
+	public void clickregisterlink() {
+		registerlink.click();
+	}
+	
 
 }
