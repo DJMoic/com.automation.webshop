@@ -15,6 +15,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.ws.base.DriverScript;
+import com.ws.pages.ComputerPage;
 import com.ws.pages.HomePage;
 import com.ws.pages.LogInPage;
 import com.ws.pages.RegisterPage;
@@ -31,6 +32,7 @@ public class BaseTest extends DriverScript {
 	HomePage homepage;
 	LogInPage loginpage;
 	RegisterPage registerpage;
+	ComputerPage computer;
 	
 	@BeforeSuite
 	public void setUpReport()
@@ -48,6 +50,7 @@ public class BaseTest extends DriverScript {
 		homepage = new HomePage();
 		loginpage = new LogInPage();
 		registerpage = new RegisterPage();
+		computer = new ComputerPage();
 	
 		
 		
@@ -70,7 +73,7 @@ public class BaseTest extends DriverScript {
 		
 	}
 	
-	@DataProvider(name = "wsexceldata")
+	@DataProvider(name = "wsdata")
 	public Object[][] testdata() {
 		ExcelUtils xl = new ExcelUtils("./src/test/resources/testdata/wsexceldata.xlsx");
 		int rows = xl.getRowCount(0);

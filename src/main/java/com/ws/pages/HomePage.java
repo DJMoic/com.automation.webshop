@@ -19,8 +19,10 @@ public class HomePage extends DriverScript {
 	@FindBy(linkText ="Log in") WebElement loginLink;
 	@FindBy(linkText ="Log out" ) WebElement logoutLink;
 	@FindBy(xpath = "//a[@href='/register']")WebElement registerlink;
+	@FindBy(xpath = "//a[@href ='/computers']") WebElement computerpage;
 	
 	//***************************************Page Initialization******************************//
+	//this is a constructor which has to be called in every page
 	
 	public HomePage() {
 		
@@ -41,6 +43,9 @@ public class HomePage extends DriverScript {
 	}
 	public void clickregisterlink() {
 		registerlink.click();
+	}
+	public void clickcomputerpage() {
+		computerpage.click();
 	}
 	
 
