@@ -12,7 +12,7 @@ public class RegisterPage extends DriverScript {
 	
 	//*********************************************page elements*****************************************
 	
-	@FindBy(xpath = "//input[@value='M']") WebElement genderbutton;
+	@FindBy(xpath = "//input[@type='radio']") WebElement genderbutton;
 	@FindBy(id = "FirstName") WebElement firstname;
 	@FindBy(id = "LastName") WebElement lastname;
 	@FindBy(id = "Email") WebElement emailfield;
@@ -30,7 +30,7 @@ public class RegisterPage extends DriverScript {
 	}
 	//********************************************page actions*********************************************
 	
-	public void genderbutton(String gender) {
+	public void clickgenderbutton(String gender) {
 		genderbutton.sendKeys(gender);
 	}
 	

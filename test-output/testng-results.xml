@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-03T16:34:53 EST" name="Default suite" finished-at="2024-03-03T16:35:04 EST" duration-ms="10967">
+  <suite started-at="2024-03-03T22:08:23 EST" name="Default suite" finished-at="2024-03-03T22:08:33 EST" duration-ms="9888">
     <groups>
     </groups>
-    <test started-at="2024-03-03T16:34:53 EST" name="Default test" finished-at="2024-03-03T16:35:04 EST" duration-ms="10967">
-      <class name="com.ws.tests.ComputerpageTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.ComputerpageTest@24569dba]" started-at="2024-03-03T16:34:53 EST" name="setUpReport" finished-at="2024-03-03T16:34:53 EST" duration-ms="367" status="PASS">
+    <test started-at="2024-03-03T22:08:23 EST" name="Default test" finished-at="2024-03-03T22:08:33 EST" duration-ms="9888">
+      <class name="com.ws.tests.BooksPageTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.BooksPageTest@24569dba]" started-at="2024-03-03T22:08:22 EST" name="setUpReport" finished-at="2024-03-03T22:08:23 EST" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.ComputerpageTest@24569dba]" started-at="2024-03-03T16:34:53 EST" name="setup" finished-at="2024-03-03T16:35:01 EST" duration-ms="7878" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ws.tests.BooksPageTest@24569dba]" started-at="2024-03-03T22:08:23 EST" name="setup" finished-at="2024-03-03T22:08:29 EST" duration-ms="5649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="computerheadertext()[pri:0, instance:com.ws.tests.ComputerpageTest@24569dba]" started-at="2024-03-03T16:35:01 EST" name="computerheadertext" finished-at="2024-03-03T16:35:03 EST" duration-ms="1831" status="PASS">
+        <test-method signature="testbookspage()[pri:0, instance:com.ws.tests.BooksPageTest@24569dba]" started-at="2024-03-03T22:08:29 EST" name="testbookspage" finished-at="2024-03-03T22:08:31 EST" duration-ms="2753" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- computerheadertext -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.ComputerpageTest@24569dba]" started-at="2024-03-03T16:35:03 EST" name="teardown" finished-at="2024-03-03T16:35:04 EST" duration-ms="1172" status="PASS">
+        </test-method> <!-- testbookspage -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.BooksPageTest@24569dba]" started-at="2024-03-03T22:08:31 EST" name="teardown" finished-at="2024-03-03T22:08:33 EST" duration-ms="1400" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=computerheadertext status=SUCCESS method=ComputerpageTest.computerheadertext()[pri:0, instance:com.ws.tests.ComputerpageTest@24569dba] output={null}]]]>
+                <![CDATA[[TestResult name=testbookspage status=SUCCESS method=BooksPageTest.testbookspage()[pri:0, instance:com.ws.tests.BooksPageTest@24569dba] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.ws.tests.ComputerpageTest -->
+      </class> <!-- com.ws.tests.BooksPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

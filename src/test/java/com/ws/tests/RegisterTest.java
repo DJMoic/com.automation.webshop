@@ -18,11 +18,11 @@ public class RegisterTest extends BaseTest {
 		
 	}
     @Test(dataProvider = "wsdata")
-    public void testregisterpage(String gender, String  Name, String LastName, String email, String password, String confrmpasswrd ) {
+    public void testregisterpage(String gender, String  Name, String LastName, String email, String password, String confrmpasswrd ) throws InterruptedException {
     	logger = report.createTest("Validating Register Page");
     	homepage.clickregisterlink();
     	logger.pass("Successfully clicked register link");
-    	registerpage.genderbutton(gender);
+    	registerpage.clickgenderbutton(gender);
     	registerpage.firstname(Name);
     	registerpage.lastname(LastName);
     	registerpage.emailfield(email);
