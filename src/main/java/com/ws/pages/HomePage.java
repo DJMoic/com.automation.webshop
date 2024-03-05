@@ -21,6 +21,7 @@ public class HomePage extends DriverScript {
 	@FindBy(xpath = "//a[@href='/register']")WebElement registerlink;
 	@FindBy(xpath = "//a[@href ='/computers']") WebElement computerpage;
 	@FindBy(xpath = "//a[@href='/books']") WebElement booksmenu;
+	@FindBy(xpath = "//a[@href='/gift-cards']") WebElement giftcardmenu;
 	
 	//***************************************Page Initialization******************************//
 	//this is a constructor which has to be called in every page
@@ -53,5 +54,8 @@ public class HomePage extends DriverScript {
 		booksmenu.click();
 	}
 	
+	public void clickgiftcardmenu() {
+		giftcardmenu.click();
+	}
 
 }

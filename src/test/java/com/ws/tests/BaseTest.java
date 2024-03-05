@@ -17,6 +17,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.ws.base.DriverScript;
 import com.ws.pages.BooksPage;
 import com.ws.pages.ComputerPage;
+import com.ws.pages.GiftCardPage;
 import com.ws.pages.HomePage;
 import com.ws.pages.LogInPage;
 import com.ws.pages.RegisterPage;
@@ -35,6 +36,8 @@ public class BaseTest extends DriverScript {
 	RegisterPage registerpage;
 	ComputerPage computer;
 	BooksPage bookspage;
+	GiftCardPage giftcardpage;
+	
 	
 	
 	@BeforeSuite
@@ -55,6 +58,7 @@ public class BaseTest extends DriverScript {
 		registerpage = new RegisterPage();
 		computer = new ComputerPage();
 	    bookspage = new BooksPage();
+	    giftcardpage = new GiftCardPage();
 	
 		
 		

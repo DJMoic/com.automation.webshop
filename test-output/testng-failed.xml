@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ws.tests.BooksPageTest">
+      <class name="com.ws.tests.GiftCardPageTest">
         <methods>
           <include name="setUpReport"/>
           <include name="setup"/>
-          <include name="testbookspage"/>
           <include name="teardown"/>
+          <include name="testgiftcardpage"/>
         </methods>
-      </class> <!-- com.ws.tests.BooksPageTest -->
+      </class> <!-- com.ws.tests.GiftCardPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
