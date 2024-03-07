@@ -13,7 +13,7 @@ public class LogInPageTest extends BaseTest{
 	
 	
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testHomePageTitle() 
 	{
 		logger = report.createTest("Validating HomePage Title");
@@ -24,7 +24,7 @@ public class LogInPageTest extends BaseTest{
 		logger.pass("Verified the HomePageTitle Successfully");
 		
 	}
-	@Test(dataProvider = "wsdata", enabled = true)
+	@Test(dataProvider = "wsdata", enabled = false)
 	public void testLoginFucntion(String username, String password) throws InterruptedException {
 		logger = report.createTest("Validating the login Function");
 		homepage.clickLogin();
@@ -49,7 +49,7 @@ public class LogInPageTest extends BaseTest{
 		
 				
 	}
-	@Test (enabled = false)
+	@Test (enabled = true)
 	public void testForgotPasswordLink() {
 		logger = report.createTest("Validating the forgotpassword link is present");
 		homepage.clickLogin();
@@ -60,7 +60,7 @@ public class LogInPageTest extends BaseTest{
 		quitDriver();
 	}
 	
-	@Test(enabled =false)
+	@Test(enabled =true)
 	public void testinvalidemailid()
 	{
 		logger = report.createTest("Validating message showing \"invalid email");
